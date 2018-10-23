@@ -3,5 +3,5 @@
 2. [Диаграмма активности](https://github.com/VladMakarevich2017/OnlineDrawing/blob/master/Documents/diagrams/Activities.md)
 3. [Диаграмма последовательности](https://github.com/VladMakarevich2017/OnlineDrawing/blob/master/Documents/diagrams/Sequence.md)
 4. [Диаграмма состояний](https://github.com/VladMakarevich2017/OnlineDrawing/blob/master/Documents/diagrams/State.md)
-5. [Диаграмма классов](#)
-6. [Диаграмма развёртывания](#)
+5. [Диаграмма классов](https://github.com/VladMakarevich2017/OnlineDrawing/blob/master/Images/class/class.png)
+6. [Диаграмма развёртывания](https://github.com/VladMakarevich2017/OnlineDrawing/blob/master/Images/deployment/Deployment.png)
