@@ -1,0 +1,29 @@
+<b:beans xmlns="http://www.springframework.org/schema/security"
+		 xmlns:b="http://www.springframework.org/schema/beans"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http />
+	
+	<http use-expressions="true" >
+	    <intercept-url pattern="/login*" access="permitAll" />
+	    <intercept-url pattern="/**" access="isAuthenticated()" />
+	    <custom-filter before="FORM_LOGIN_FILTER" ref="myFilter" />
+	 
+	    <form-login login-page='/login'
+	      authentication-failure-url="/login?error=true"
+	      authentication-success-handler-ref="myAuthenticationSuccessHandler"/>
+	    <logout/>
+	</http>
+ 
+	<beans:bean id="myFilter" class="spring_boot.springBoot.filter.CustomFilter"/>
+	 
+	<beans:bean id="myAuthenticationSuccessHandler"
+	  class="spring_boot.springBoot.filter.MySimpleUrlAuthenticationSuccessHandler" />
+
+	<user-service>
+		<user name="user" password="password" authorities="ROLE_USER" />
+	</user-service>
+
+</b:beans>

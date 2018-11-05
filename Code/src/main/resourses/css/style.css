@@ -1,0 +1,60 @@
+button span.credits {
+   background: no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    width: 30px;
+}
+
+.hidden {
+	display: none;
+}
+
+.control-panel span.credits-lock {
+   background-image: url(icons/ios-lock.svg);
+}
+
+.control-panel span.credits-unlock {
+   background-image: url(icons/ios-unlock.svg);
+}
+
+.control-panel span.credits-trash {
+   background-image: url(icons/ios-trash.svg);
+}
+
+.control-panel span.credits-add {
+   background-image: url(icons/md-add.svg);
+}
+
+.control-panel span.credits-rename {
+   background-image: url(icons/ios-build.svg);
+}
+
+tbody span.credits-connect {
+    background: no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+   background-image: url(icons/connect.svg);
+}
+
+.users tr span.active {
+	background: url(icons/md-checkmark.svg) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    width: 20px;
+}
+
+.users tr span.block {
+	background: url(icons/md-close.svg) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    width: 30px;
+}
